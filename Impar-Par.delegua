@@ -1,0 +1,17 @@
+var n = inteiro(leia('numeros a serem analisados: '))
+
+var total = 0
+var par = 0 
+
+enquanto(n > 0){
+    total += 1
+    var x = inteiro(leia())
+    se (x % 2 == 0){
+        par += 1
+    }
+    n -= 1
+}
+
+var impar = total - par
+escreva(par, 'pares')
+escreva(impar, 'impares')
